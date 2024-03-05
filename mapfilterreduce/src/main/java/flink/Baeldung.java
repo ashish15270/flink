@@ -22,7 +22,8 @@ public class Baeldung {
                     public boolean filter(Integer val) throws Exception {
                         return val > threshold;
                     }
-                }).map(new MapFunction<Integer, Tuple2<Integer, Long>>() {
+                })
+                .map(new MapFunction<Integer, Tuple2<Integer, Long>>() {
                     @Override
                     public Tuple2<Integer, Long> map(Integer value) throws Exception {
                         return new Tuple2<>(1, (long) value);
