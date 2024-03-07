@@ -46,8 +46,4 @@ public static class Tokenizer implements MapFunction <String, Tuple2<String, Int
     }
 }
 
-
-
-
-
 }
